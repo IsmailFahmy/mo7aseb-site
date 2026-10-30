@@ -10,12 +10,13 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="lead">Effective 28 October 2026.</p>
+  <p class="lead">Effective 30 October 2026.</p>
 
   <p>mo7aseb is a personal finance tool built and operated by Ismail Fahmy for his own use. It is not offered to the public. This policy explains what Google user data mo7aseb accesses, how it uses that data, where the data is kept, and who else receives it.</p>
 
   <h2>Google data mo7aseb accesses</h2>
   <ul>
+    <li><strong>Google sign-in (Firebase Authentication)</strong> — the owner signs in to the mo7aseb app with his Google account. mo7aseb receives his name, email address and a sign-in identifier, and uses them only to check that he is the allowed owner.</li>
     <li><strong>Google Sheets</strong> — reads and writes the owner's own finance spreadsheet, which holds the owner's transactions, categories, rules and budgets.</li>
     <li><strong>Google Drive</strong> — reads, moves, renames and uploads bank statement files in the owner's own statement folders.</li>
     <li><strong>Gmail</strong> (read-only) — finds bank statement emails that match searches the owner configures, and downloads their statement attachments. mo7aseb does not read other email, and never sends, changes or deletes email.</li>
@@ -25,10 +26,10 @@
   <p>Only to give its owner a view of his own finances: to extract transactions from statements, remove duplicates, categorize spending, and show budgets and reports. mo7aseb does not use the data for advertising, does not build profiles for anyone else, and does not sell it.</p>
 
   <h2>Where the data is kept</h2>
-  <p>In the owner's own Google account, on the owner's own computer, and in the owner's own database. The database runs on a computer or cloud project the owner controls, and data there is encrypted in transit and at rest. Access tokens and statement passwords are kept in the owner's private configuration, never in source code or logs.</p>
+  <p>In the owner's own Google account, on the owner's own computer, and in the owner's own database. The database runs in the owner's own Google Cloud project, on Cloud SQL in the europe-west1 region (Belgium), and the app is served by Firebase Hosting from the same project. Data there is encrypted in transit and at rest. Access tokens and statement passwords are kept in the owner's private configuration, never in source code or logs.</p>
 
   <h2>Who else receives the data</h2>
-  <p>Statement contents may be sent to Anthropic's Claude so it can read a statement and extract its transactions. Apart from that, mo7aseb shares Google user data with no one.</p>
+  <p>Google Cloud stores and processes the data as the infrastructure provider of the owner's project. Statement contents may be sent to Anthropic's Claude so it can read a statement and extract its transactions. Apart from that, mo7aseb shares Google user data with no one.</p>
 
   <h2>Limited Use</h2>
   <p>mo7aseb's use and transfer of information received from Google APIs to any other app adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
